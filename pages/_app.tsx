@@ -5,5 +5,10 @@ export default function App({ Component, pageProps }: AppProps) {
   console.log('Component', Component);
   console.log('pageProps', pageProps);
 
-  return <GlobalStyle {...pageProps}></GlobalStyle>;
+  return (
+    <>
+      <GlobalStyle />
+      <Component {...pageProps} />
+    </>
+  );
 }
