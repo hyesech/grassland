@@ -9,6 +9,7 @@ const Container = styled.div`
   align-content: center;
 `;
 
+// TODO) className 충돌 있음. Webpack 설정 때문인 것 같음.
 const Text = styled.span`
   color: #ffffff;
 `;
