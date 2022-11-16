@@ -1,10 +1,7 @@
 import styled from 'styled-components';
-import React, { FC, ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 
 const Container = styled.div`
-  position: relative;
-  width: inherit;
-  height: inherit;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
