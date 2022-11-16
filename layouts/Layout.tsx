@@ -9,6 +9,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-content: center;
+  padding: 1rem;
 `;
 
 const NavBtn = styled.button`
@@ -22,7 +23,6 @@ const NavBtn = styled.button`
   transition: font-size 0.3s ease-in-out;
 
   :hover {
-    font-size: 3rem;
     cursor: e-resize;
   }
 `;
@@ -32,11 +32,11 @@ type Layout = {
 };
 
 export default function Layout({ children }: Layout): JSX.Element {
-  const handleNavBtn = () => {};
+  const handleNav = () => {};
   return (
     <Container>
       <>
-        <NavBtn onClick={handleNavBtn}>🌲</NavBtn>
+        <NavBtn onClick={handleNav}>🌲</NavBtn>
         {children}
       </>
     </Container>
